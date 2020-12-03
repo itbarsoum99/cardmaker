@@ -289,8 +289,8 @@ select:focus {
   textarea {
     min-width: 640px;
   }
-  input, .submit, select {
-    min-width: 640px;
+  input {
+    min-width: 440px;
   }
   .flip-card-back {
     font-size: 26px;
