@@ -241,3 +241,26 @@ a:hover {
   }
 }
 
+@media (pointer: coarse) and (orientation: portrait) {
+  .flex-box {
+    width: 100%;
+    text-align: center!important;
+    padding: 0vw;
+    padding-bottom: 30px;
+  }
+  .flex-box h2 {
+    line-height: 60%;
+  }
+  .flex-container {
+    display: block;
+  }
+  .card {
+    width: 75vw;
+  }
+  .flip-card {
+    width: 75vw;
+  }
+  .info {
+    width: 75vw;
+  }
+}
