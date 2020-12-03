@@ -39,15 +39,11 @@ input, .submit, select {
   color: white;
   margin-bottom: 18px;
   padding: 7px;
-  outline: -webkit-focus-ring-color auto 0px;
-  outline-offset: 0px;
 }
 
 option {
   background-color: #222;
   transition: 0.3s;
-  outline: -webkit-focus-ring-color auto 0px;
-  outline-offset: 0px;
 }
 
 
@@ -79,8 +75,6 @@ textarea {
   max-height: 250px;
   max-width: 780px;
   margin-bottom: 18px;
-  outline: -webkit-focus-ring-color auto 0px;
-  outline-offset: 0px;
 }
 
 .flex-container {
