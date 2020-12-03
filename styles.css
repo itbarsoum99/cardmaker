@@ -250,6 +250,10 @@ a:hover {
   }
   .flex-box h2 {
     line-height: 60%;
+    font-size: 40px;
+  }
+  .flex-box p {
+    font-size: 30px;
   }
   .flex-container {
     display: block;
@@ -262,5 +266,11 @@ a:hover {
   }
   .info {
     width: 75vw;
+  }
+  input, .submit, select, textarea {
+    font-size: 30px;
+  }
+  label {
+    font-size: 20px;
   }
 }
