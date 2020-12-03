@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nerko+One&display=swap');
+
 
 body {
   padding-left: 10vw;
@@ -109,4 +111,91 @@ a {
 
 a:hover {
   color: #fff;
+}
+
+
+.flip-card {
+  background-color: transparent;
+  width: 40vw;
+  height: 300px;
+  perspective: 1000px;
+  margin: auto;
+  display: none;
+  margin-top: 10vh;
+  margin-bottom: 80px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 1s;
+  transform-style: preserve-3d;
+  box-shadow: 10px 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+
+.info {
+  display: none;
+  font-family: "Lato", sans-serif;
+  width: 40vw;
+  background-color: #2196f3;
+  margin: auto;
+  margin-top: 1vw;
+  margin-bottom: 40vw;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+}
+
+.info p {
+  padding-left: 20px;
+  color: black !important;
+}
+
+.info img {
+  height: 30px;
+  filter: invert(0.1);
+}
+
+
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  width: 100%;
+  height: 100%;
+}
+
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+  font-family:'Nerko One', cursive;
+  font-size: 30px;
+  padding-top: 50px;
+  line-height: 170px;
+}
+
+.flip-card-back {
+  background-color: #2196f3;
+  color: black;
+  transform: rotateY(180deg);
+  font-size: 18px;
+  padding-top: 50px;
+}
+
+.flip-card-back p {
+  width: 80%;
+  margin: auto;
+  margin-top: 10px;
+}
+
+#displayarea2 {
+  text-transform: capitalize;
 }

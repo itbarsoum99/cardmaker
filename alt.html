@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <title>Cardmaker</title>
+  <link rel="stylesheet" href="/styles.css">
+</html>
+<body>
+  <section class="card">
+
+<html>
+<head>
+<script>
+function display()
+{
+document.getElementById("displayarea").innerHTML = document.getElementById("fname").value; 
+document.getElementById("fname").value = "";
+document.getElementById("displayarea1").innerHTML = document.getElementById("lname").value; 
+document.getElementById("lname").value = "";
+}
+</script>
+</head>
+
+<body>
+<table align="center" class="hos">
+<tr>
+  <td>First Name</td><br />
+<td><input type="text" name="fname" id="fname"></td>
+</tr>
+<tr>
+<td>Last Name</td><br />
+<td><input type="text" name=lname" id="lname"></td>
+</tr>
+
+<tr>
+<td>&nbsp</td>
+<td align="center"><input type="button" value="Submit" name="submit" id="submit" onClick="display()"/></td>
+</tr>
+</table>
+<table width="400px" align="center" border=0> 
+
+<tr>
+<td align="center"><b>First Name</b></td>
+<td align="center"><b>Last Name</b></td>
+</tr> 
+<tr>
+<td align="center"><div id="displayarea"></div></td>
+<td align="center"><div id="displayarea1"></div></td>
+</tr>
+</table>
+</body>
+</html>
+  </section>
+  <footer>
+    <div class="flex-container">
+      <div class="flex-box" id="flex-box-one">
+        <h2>License</h2>
+        <p>This work is licensed under a <a target="_blank" rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.</p>
+      </div>
+      <div class="flex-box" id="flex-box-two">
+        <h2>Developer</h2>
+        <p>Created by <a target="_blank" href="https://itbarsoum.netlify.app/">Isaac Barsoum, a freelance web developer</a></p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

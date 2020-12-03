@@ -4,24 +4,42 @@
   <link rel="stylesheet" href="/styles.css">
 </html>
 <body>
-  <section class="card">
-    <form action="action.php" method="POST">
+  <section id="card1" class="card">
       <label for="name">Who is it for?</label><br>
-      <input type="text" name="name" placeholder="Enter a name" /><br>
+      <input type="text" name="name" id="forname" placeholder="Enter a name" /><br>
       <label for="message">What do you want to say?</label><br>
-      <textarea autofocus name="message" placeholder="Type your message here" required /></textarea><br>
-      <select name="endearment" required>
-        <option value="dear">Dear</option>
+      <textarea id="message" name="message" placeholder="Type your message here" required /></textarea><br>
+      <select name="endearment" required id="endearment">
         <option value="love">Love</option>
         <option value="sincerely">Sincerely</option>
         <option value="yours">Yours</option>
         <option value="yourstruly">Yours truly</option>
+        <option value="from">From</option>
       </select><br>
       <label for="from">Who is it from?</label><br>
-      <input type="text" name="from" placeholder="Enter your name" /><br>
-      <button type="submit" class="submit"/>Create your card</button>
-    </form>
+      <input type="text" name="from" id="from" placeholder="Enter your name" /><br>
+      <button type="submit" onclick="display()" class="submit"/>Create your card</button>
   </section>
+  
+<div class="flip-card" id="flip-card">
+  
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <h1>For <span id="cardfrontbox"></span></h1>
+    </div>
+    <div class="flip-card-back">
+      <p>Dear <span id="displayarea"></span>,</p>
+      <p id="displayarea1"></p>
+      <p><span id="displayarea2"></span>,</p>
+      <p id="displayarea3"></p>
+    </div>
+  </div>
+</div>
+<section id="info" class="info">
+    <img src="/info.png">
+    <p>Hover over the card!</p>
+  </section>
+
   <footer>
     <div class="flex-container">
       <div class="flex-box" id="flex-box-one">
@@ -34,5 +52,21 @@
       </div>
     </div>
   </footer>
+  <script>
+    function display() {
+      document.getElementById("flip-card").style.display = "block";
+      document.getElementById("info").style.display = "flex";
+      document.getElementById("card1").style.display = "none";
+      document.getElementById("cardfrontbox").innerHTML = document.getElementById("forname").value;
+      document.getElementById("displayarea").innerHTML = document.getElementById("forname").value; 
+      document.getElementById("forname").value = "";
+      document.getElementById("displayarea1").innerHTML = document.getElementById("message").value; 
+      document.getElementById("message").value = "";
+      document.getElementById("displayarea2").innerHTML = document.getElementById("endearment").value;
+      document.getElementById("endearment").value = "";
+      document.getElementById("displayarea3").innerHTML = document.getElementById("from").value;
+      document.getElementById("from").value = "";
+    }
+  </script>
 </body>
 </html>
