@@ -217,6 +217,22 @@ a:hover {
   text-transform: capitalize;
 }
 
+input:focus {
+  outline-color: transparent;
+}
+
+textarea:focus {
+  outline-color: transparent;
+}
+
+.submit:focus {
+  outline-color: transparent;
+}
+
+select:focus {
+  outline-color: transparent;
+}
+
 @media (max-width: 740px) {
   .flex-box {
     width: 100%;
@@ -266,6 +282,9 @@ a:hover {
   }
   .info {
     width: 75vw;
+  }
+  .shareicon {
+    width: 75px;
   }
   input, .submit, select, textarea {
     font-size: 30px;
