@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+body {
+  padding-left: 10vw;
+  padding-right: 10vw;
+  background-color: #111;
+  color: white;
+  font-family: "Lato", sans-serif;
+  height: 100vh;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+
+.card {
+  width: 60vw;
+  background-color: #222;
+  border-radius: 15px;
+  padding: 35px;
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+  margin: auto;
+  margin-top: 50vh;
+  transform: translate(0, -50%);
+}
+
+input, .submit, select {
+  font-family: "Lato", sans-serif;
+  background-color: transparent;
+  font-size: 18px;
+  border: 3px solid white;
+  color: white;
+  margin-bottom: 18px;
+  padding: 7px;
+  outline: -webkit-focus-ring-color auto 0px;
+  outline-offset: 0px;
+}
+
+option {
+  background-color: #222;
+  transition: 0.3s;
+  outline: -webkit-focus-ring-color auto 0px;
+  outline-offset: 0px;
+}
+
+
+.submit {
+  transition: 0.3s;
+}
+
+.submit:hover {
+  cursor: pointer;
+  background-color: white;
+  color: black;
+}
+
+
+
+label {
+  font-size: 12px;
+}
+
+textarea {
+  font-family: "Lato", sans-serif;
+  background-color: transparent;
+  font-size: 18px;
+  border: 3px solid white;
+  padding: 7px;
+  color: white;
+  min-height: 140px;
+  min-width: 340px;
+  max-height: 250px;
+  max-width: 780px;
+  margin-bottom: 18px;
+  outline: -webkit-focus-ring-color auto 0px;
+  outline-offset: 0px;
+}
+
+.flex-container {
+  display: flex;
+  height: auto;
+}
+
+.flex-box {
+  width: 38vw;
+  padding: 1vw;
+  margin: auto;
+}
+
+#flex-box-one {
+  text-align: left;
+}
+
+#flex-box-two {
+  text-align: right;
+}
+
+a {
+  color: #bbb;
+  transition: 0.4s;
+}
+
+a:hover {
+  color: #fff;
+}

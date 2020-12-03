@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <title>Cardmaker</title>
+  <link rel="stylesheet" href="/styles.css">
+</html>
+<body>
+  <section class="card">
+    <form class="cardmaker" action="action.php" method="post">
+      <label for="name">Who is it for?</label><br>
+      <input type="text" name="name" placeholder="Enter a name" /><br>
+      <label for="message">What do you want to say?</label><br>
+      <textarea autofocus name="message" placeholder="Type your message here" required /></textarea><br>
+      <select name="endearment" required>
+        <option value="dear">Dear</option>
+        <option value="love">Love</option>
+        <option value="sincerely">Sincerely</option>
+        <option value="yours">Yours</option>
+        <option value="yourstruly">Yours truly</option>
+      </select><br>
+      <label for="from">Who is it from?</label><br>
+      <input type="text" name="from" placeholder="Enter your name" /><br>
+      <button type="submit" class="submit"/>Create your card</button>
+    </form>
+  </section>
+  <footer>
+    <div class="flex-container">
+      <div class="flex-box" id="flex-box-one">
+        <h2>License</h2>
+        <p>This work is licensed under a <a target="_blank" rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.</p>
+      </div>
+      <div class="flex-box" id="flex-box-two">
+        <h2>Developer</h2>
+        <p>Created by <a target="_blank" href="https://itbarsoum.netlify.app/">Isaac Barsoum, a freelance web developer</a></p>
+      </div>
+</body>
+</html>
