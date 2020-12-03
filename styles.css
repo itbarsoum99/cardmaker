@@ -292,6 +292,9 @@ select:focus {
   input {
     min-width: 440px;
   }
+  .info {
+    font-size: 26px;
+  }
   .flip-card-back {
     font-size: 26px;
   }
