@@ -91,7 +91,7 @@ textarea {
 }
 
 .flex-box {
-  width: 38vw;
+  width: 33%;
   padding: 1vw;
   margin: auto;
 }
@@ -163,6 +163,25 @@ a:hover {
   filter: invert(0.1);
 }
 
+#flex-box-three {
+  text-align: center;
+}
+
+#flex-box-three a {
+  text-decoration: none;
+}
+
+.shareicon {
+  filter: invert(0.5);
+  width: 30px;
+  padding: 20px;
+  padding-top: 25px;
+  transition: 0.4s;
+}
+
+.shareicon:hover {
+  filter: invert(1);
+}
 
 
 .flip-card-front, .flip-card-back {
