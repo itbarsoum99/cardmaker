@@ -19,6 +19,14 @@
       </select><br>
       <label for="from">Who is it from?</label><br>
       <input type="text" name="from" id="from" placeholder="Enter your name" /><br>
+      <label for="font">Choose your font</label><br>
+      <select name="font" required id="fontchoice">
+        <option value="lato">Lato</option>
+        <option value="architectsdaughter" class="architectsdaughter">Architects Daughter</option>
+        <option value="indieflower" class="indieflower">Indie Flower</option>
+        <option value="shadowsintolight" class="shadowsintolight">Shadows Into Light</option>
+        <option value="patrickhand" class="patrickhand">Patrick Hand</option>
+      </select><br />
       <button type="submit" onclick="display()" class="submit"/>Create your card</button>
   </section>
   
@@ -27,7 +35,7 @@
     <div class="flip-card-front">
       <h1>For <span id="cardfrontbox"></span></h1>
     </div>
-    <div class="flip-card-back">
+    <div class="flip-card-back" id="back">
       <p>Dear <span id="displayarea"></span>,</p>
       <p id="displayarea1"></p>
       <p><span id="displayarea2"></span>,</p>
@@ -82,6 +90,21 @@
       document.getElementById("endearment").value = "";
       document.getElementById("displayarea3").innerHTML = document.getElementById("from").value;
       document.getElementById("from").value = "";
+      var fc = document.getElementById("fontchoice").value;
+      var back = document.getElementById("back");
+      if (fc == "architectsdaughter") {
+        back.style.fontFamily = "'Architects Daughter', cursive";
+      } else if (fc == "shadowsintolight") {
+        back.style.fontFamily = "'Shadows Into Light', cursive";
+      } else if (fc == "patrickhand") {
+        back.style.fontFamily = "'Patrick Hand', cursive";
+      } else if (fc == "indieflower") {
+        back.style.fontFamily = "'Indie Flower', cursive";
+      } else if (fc == "lato") {
+        back.style.fontFamily = "'Lato', sans-serif";
+      } else {
+        back.style.fontFamily = "'Lato', sans-serif";
+      }
     }
   </script>
 </body>

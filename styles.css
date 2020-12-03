@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nerko+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Indie+Flower&family=Patrick+Hand&family=Shadows+Into+Light&display=swap');
 
 
 body {
@@ -13,11 +14,29 @@ body::-webkit-scrollbar {
     display: none;
 }
 
+
 body {
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
 
+select::-webkit-scrollbar {
+  display: none;
+}
+
+select {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+textarea::-webkit-scrollbar {
+  display: none;
+}
+
+textarea {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
 
 .card {
   width: 60vw;
@@ -39,6 +58,22 @@ input, .submit, select {
   color: white;
   margin-bottom: 18px;
   padding: 7px;
+}
+
+.architectsdaughter {
+  font-family: "Architects Daughter", cursive;
+}
+
+.indieflower {
+  font-family: "Indie Flower", cursive;
+}
+
+.shadowsintolight {
+  font-family: "Shadows Into Light", cursive;
+}
+
+.patrickhand {
+  font-family: "Patrick Hand", cursive;
 }
 
 option {
