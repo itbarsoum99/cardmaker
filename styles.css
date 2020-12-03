@@ -286,4 +286,10 @@ select:focus {
   label {
     font-size: 20px;
   }
+  .flip-card-back {
+    font-size: 26px;
+  }
+  .flip-card-front {
+    font-size: 40px;
+  }
 }
