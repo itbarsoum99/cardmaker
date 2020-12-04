@@ -263,6 +263,14 @@ select:focus {
   outline-color: transparent;
 }
 
+select:hover {
+  cursor: pointer;
+}
+
+option:hover {
+  cursor: pointer;
+}
+
 @media (max-width: 740px) {
   .flex-box {
     width: 100%;
