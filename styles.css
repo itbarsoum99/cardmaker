@@ -220,7 +220,7 @@ a:hover {
 }
 
 .flip-card-front {
-  background-image: url("/greetingcard4.jpeg");
+  background-image: url("/greetingcard.jpeg");
   background-size: cover;
   color: black;
   font-family:'Nerko One', cursive;
