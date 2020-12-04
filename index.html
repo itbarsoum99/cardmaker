@@ -27,12 +27,20 @@
         <option value="shadowsintolight" class="shadowsintolight">Shadows Into Light</option>
         <option value="patrickhand" class="patrickhand">Patrick Hand</option>
       </select><br />
+<!--      <label for="bg">Choose the background for the front</label>
+      <select name="bg" required id="bg">
+        <option value="flowers">Flowery</option>
+        <option value="holidays">Holidays</option>
+        <option value="birthday">Birthday</option>
+        <option value="colorful">Simply Colorful</option>
+        <option value="plain">Plain</option>
+      </select><br /> -->
       <button type="submit" onclick="display()" class="submit"/>Create your card</button>
   </section>
   
 <div class="flip-card" id="flip-card">
   <div class="flip-card-inner">
-    <div class="flip-card-front">
+    <div class="flip-card-front" id="front">
       <h1>For <span id="cardfrontbox"></span></h1>
     </div>
     <div class="flip-card-back" id="back">
@@ -105,6 +113,17 @@
       } else {
         back.style.fontFamily = "'Lato', sans-serif";
       }
+      /*var bg = document.getElementById("fontchoice").value;
+      var front = document.getElementById("front");
+      if (bg == "flowers") {
+        front.style.backgroundImage = "url('/greetingcard1.jpeg')";
+      } else if (bg == "holidays") {
+        front.style.backgroundImage = "url('/greetingcard5.jpeg')";
+      } else if (bg == "birthday") {
+        front.style.backgroundImage = "url('/greetingcard3.jpeg')";
+      } else if (bg == "colorful") {
+        front.style.backgroundImage = "url('/greetingcard4.jpeg')";
+      }*/
     }
   </script>
 </body>
